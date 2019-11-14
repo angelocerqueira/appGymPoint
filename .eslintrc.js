@@ -4,7 +4,7 @@ module.exports = {
     node: true,
   },
   extends: [
-    'airbnb-base','prettier'
+    'airbnb-base', 'prettier'
   ],
   plugins: ['prettier'],
   globals: {
@@ -16,11 +16,11 @@ module.exports = {
     sourceType: 'module',
   },
   rules: {
-    "prettier/prettier":"error",
+    "prettier/prettier": "error",
     "class-methods-use-this":"off",
     "no-param-reassign":"off",
     "camelcase":"off",
     "no-unused-vars": ["error", { "argsIgnorePattern": "next"}],
-    "linebreak-style": ["error", process.env.NODE_ENV === 'prod' ? "unix" : "windows"]
+    "linebreak-style": ["error", process.env.NODE_ENV === 'prod' ? "unix" : "windows"],
   },
 };
