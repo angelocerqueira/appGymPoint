@@ -2,9 +2,6 @@
   <img alt="Gympoint" title="Gympoint" src="https://github.com/Rocketseat/bootcamp-gostack-desafio-02/blob/master/.github/logo.png" width="200px" />
 </h1>
 
-<h3 align="center">
-  Desafio 2: Gympoint, o início
-</h3>
 
 <blockquote align="center">“Não espere para plantar, apenas tenha paciência para colher”!</blockquote>
 
