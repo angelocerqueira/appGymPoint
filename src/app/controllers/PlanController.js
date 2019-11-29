@@ -64,12 +64,15 @@ class PlanController {
     });
   }
 
-  async delete(req, res) {
+  async destroy(req, res) {
     const plans = await Plan.findByPk(req.params.id);
     const planDeleted = await plans.destroy(req.body);
-    if (planDeleted) {
-      return res.json({ msg: 'Plan deleted' });
+    if (!planDeleted) {
+      return res.json({ msg: 'Plan not deleted' });
     }
+    return res.status(200).json({
+      msg: 'Plan deleted',
+    });
   }
 }
 
